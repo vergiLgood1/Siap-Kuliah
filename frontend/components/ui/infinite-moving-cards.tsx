@@ -76,20 +76,20 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-8xl overflow-hidden  ",
+        "scroller relative z-20 max-w-8xl overflow-hidden  ",
         className
       )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap ",
           start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item, idx) => (
-           <Card className="max-w-[400px]">
+           <Card className="max-w-[400px] bg-[#f6f5f4]">
            <CardHeader className="flex gap-3">
              <Image
                alt="nextui logo"

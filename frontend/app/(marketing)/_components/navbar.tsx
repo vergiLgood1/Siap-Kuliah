@@ -13,6 +13,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 
 import { HoveredLink, Menu, MenuItem, ProductItem } from "@/components/ui/navbar-menu";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem} from "@nextui-org/react";
+import { ButtonAnimate } from "@/components/ui/moving-border";
 
 
 
@@ -24,7 +25,7 @@ export function NavbarMenu({ className }: { className?: string }) {
     >
     <Navbar className="bg-transparent">
         <NavbarBrand>
-            <Logo />
+            <h1 className="font-extrabold text-2xl">Siapkuliah</h1>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <Menu setActive={setActive}>
@@ -76,24 +77,20 @@ export function NavbarMenu({ className }: { className?: string }) {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Button 
-          variant="ghost"
-          size="sm"
-          
-          >
-            Get free
-          </Button>
+        <ButtonAnimate
+                borderRadius="1.75rem"  
+                size="sm"
+                className=" bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            >
+                Get free
+            </ButtonAnimate>
         </NavbarItem>
         <NavbarItem>
-            <Button 
-                size="sm"
-            >
-                Sign Up
-            </Button>
+           
         </NavbarItem>
-            {/* <NavbarItem className="">
+            <NavbarItem className="">
                 <ModeToggle />
-            </NavbarItem> */}
+            </NavbarItem>
       </NavbarContent>
     </Navbar>
     </div>

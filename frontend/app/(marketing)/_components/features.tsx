@@ -14,18 +14,23 @@ import Image from "next/image";
 
 export function Features() {
   return (
-    <BentoGrid className="max-w-5xl mx-auto md:auto-rows-[20rem]">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          className={cn("[&>p:text-lg]", item.className)}
-          icon={item.icon}
-        />
-      ))}
-    </BentoGrid>
+    <div>
+      <h2 className="mt-10 sm:mt-10 font-bold text-xl text-center sm:text-3xl dark:text-white text-black">
+        Fitur-fitur menarik <br />  yang kami sediakan
+      </h2>
+      <BentoGrid className="max-w-5xl mx-auto md:auto-rows-[20rem]">
+        {items.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            description={item.description}
+            header={item.header}
+            className={cn("[&>p:text-lg]", item.className)}
+            icon={item.icon}
+          />
+        ))}
+      </BentoGrid>
+    </div>
   );
 }
 const Skeleton = () => (
@@ -65,12 +70,12 @@ const SkeletonOne = () => {
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
       <Image
-          src="/assets/images/img1.jpg"
-          alt="avatar"
-          height="100"
-          width="100"
-          className="object-cover md:h-full w-full max-h-[14rem] bg-cover bg-bottom "
-        />
+        src="/assets/images/img1.jpg"
+        alt="avatar"
+        height="100"
+        width="100"
+        className="object-cover md:h-full w-full max-h-[14rem] bg-cover bg-bottom "
+      />
     </motion.div>
   );
 };
@@ -107,7 +112,7 @@ const SkeletonTwo = () => {
           style={{
             maxWidth: Math.random() * (100 - 40) + 40 + "%",
           }}
-          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
+          className="flex flex-row rounded-full border border-neutral-400 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
         ></motion.div>
       ))}
     </motion.div>
@@ -183,7 +188,8 @@ const SkeletonFour = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-        "Bagaimana langkah-langkah yang harus saya ambil untuk masuk ke universitas yang saya inginkan?"
+          "Bagaimana langkah-langkah yang harus saya ambil untuk masuk ke
+          universitas yang saya inginkan?"
         </p>
         <p className="border border-red-500 bg-red-100 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
           Delusional
@@ -198,7 +204,8 @@ const SkeletonFour = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-        "Apakah penting memiliki pengalaman kerja atau magang sebelum masuk kuliah?
+          "Apakah penting memiliki pengalaman kerja atau magang sebelum masuk
+          kuliah?
         </p>
         <p className="border border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
           Sensible
@@ -216,7 +223,8 @@ const SkeletonFour = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-        "Apakah ada beasiswa atau program bantuan keuangan yang bisa saya dapatkan untuk kuliah?"
+          "Apakah ada beasiswa atau program bantuan keuangan yang bisa saya
+          dapatkan untuk kuliah?"
         </p>
         <p className="border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
           Helpless
@@ -269,7 +277,8 @@ const SkeletonFive = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="text-xs text-neutral-500">
-        "Apakah ada beasiswa atau program bantuan keuangan yang bisa saya dapatkan untuk kuliah?"
+          "Apakah ada beasiswa atau program bantuan keuangan yang bisa saya
+          dapatkan untuk kuliah?"
         </p>
       </motion.div>
       <motion.div
@@ -298,7 +307,8 @@ const items = [
     title: "Try out",
     description: (
       <span className="text-sm">
-        Engage in try-out sessions to enhance your knowledge level across various 
+        Engage in try-out sessions to enhance your knowledge level across
+        various
       </span>
     ),
     header: <SkeletonTwo />,
@@ -309,7 +319,8 @@ const items = [
     title: "Scholarship",
     description: (
       <span className="text-sm">
-         Explore various information about available scholarships to support your education.
+        Explore various information about available scholarships to support your
+        education.
       </span>
     ),
     header: <SkeletonThree />,
@@ -320,7 +331,8 @@ const items = [
     title: "Join With Community",
     description: (
       <span className="text-sm">
-         Explore various information about available scholarships to support your education.
+        Explore various information about available scholarships to support your
+        education.
       </span>
     ),
     header: <SkeletonFour />,
@@ -332,7 +344,8 @@ const items = [
     title: "University",
     description: (
       <span className="text-sm">
-        Discover thousands of information about universities worldwide to help you make informed decisions.
+        Discover thousands of information about universities worldwide to help
+        you make informed decisions.
       </span>
     ),
     header: <SkeletonFive />,
