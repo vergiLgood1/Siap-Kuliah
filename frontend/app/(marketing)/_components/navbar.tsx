@@ -23,11 +23,11 @@ export function NavbarMenu({ className }: { className?: string }) {
     <div
       className={cn("fixed top-0 inset-x-0 mx-auto z-50", className)}
     >
-    <Navbar className="bg-transparent">
+    <Navbar className="bg-white dark:bg-[#1F1F1F] items-center" maxWidth="full" isBordered={false}>
         <NavbarBrand>
             <h1 className="font-extrabold text-2xl">Siapkuliah</h1>
         </NavbarBrand>
-        <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        <NavbarContent className="hidden sm:flex gap-4 max-w-8xl" justify="center">
         <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
@@ -80,7 +80,7 @@ export function NavbarMenu({ className }: { className?: string }) {
         <ButtonAnimate
                 borderRadius="1.75rem"  
                 size="sm"
-                className=" bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+                className=" bg-white dark:bg-[#1F1F1F] text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
                 Get free
             </ButtonAnimate>

@@ -44,7 +44,7 @@ export function Pricing({ className, ...props }: CardProps) {
       </h2>
    
       <div className="items-center gap-4 justify-center flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap">
-        <div className="relative w-full flex flex-col rounded-lg max-w-sm order-none bg-[#222222]">
+        <div className="relative w-full flex flex-col rounded-lg max-w-sm order-none bg-[#313131]">
           <div className="flex flex-col gap-4 pt-4">
             <div className="flex flex-col text-center md:gap-1">
               <h4 className="font-extrabold text-white">Paket 1 Bulan</h4>
@@ -58,7 +58,7 @@ export function Pricing({ className, ...props }: CardProps) {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 1024 1024"
                   className="flex-none text-accent-purple"
                   height="24"
@@ -78,7 +78,7 @@ export function Pricing({ className, ...props }: CardProps) {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 1024 1024"
                   className="flex-none text-accent-purple"
                   height="24"
@@ -98,7 +98,7 @@ export function Pricing({ className, ...props }: CardProps) {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 1024 1024"
                   className="flex-none text-accent-purple"
                   height="24"
@@ -118,7 +118,7 @@ export function Pricing({ className, ...props }: CardProps) {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 1024 1024"
                   className="flex-none text-accent-purple"
                   height="24"
@@ -159,7 +159,7 @@ export function Pricing({ className, ...props }: CardProps) {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 1024 1024"
                   className="flex-none text-accent-purple"
                   height="24"
@@ -179,7 +179,7 @@ export function Pricing({ className, ...props }: CardProps) {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 1024 1024"
                   className="flex-none text-accent-purple"
                   height="24"
@@ -199,7 +199,7 @@ export function Pricing({ className, ...props }: CardProps) {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 1024 1024"
                   className="flex-none text-accent-purple"
                   height="24"
@@ -219,7 +219,7 @@ export function Pricing({ className, ...props }: CardProps) {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 1024 1024"
                   className="flex-none text-accent-purple"
                   height="24"
@@ -241,7 +241,7 @@ export function Pricing({ className, ...props }: CardProps) {
             </button>
           </div>
         </div>
-        <div className="relative w-full flex flex-col rounded-lg max-w-sm order-none bg-[#222222]">
+        <div className="relative w-full flex flex-col rounded-lg max-w-sm order-none bg-[#313131]">
           <div className="flex flex-col gap-4 pt-4">
             <div className="flex flex-col text-center md:gap-1">
               <h4 className="font-extrabold text-white">Paket 6 Bulan</h4>
@@ -255,7 +255,7 @@ export function Pricing({ className, ...props }: CardProps) {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 1024 1024"
                   className="flex-none text-accent-purple"
                   height="24"
@@ -275,7 +275,7 @@ export function Pricing({ className, ...props }: CardProps) {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 1024 1024"
                   className="flex-none text-accent-purple"
                   height="24"
@@ -295,7 +295,7 @@ export function Pricing({ className, ...props }: CardProps) {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 1024 1024"
                   className="flex-none text-accent-purple"
                   height="24"
@@ -315,7 +315,7 @@ export function Pricing({ className, ...props }: CardProps) {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 1024 1024"
                   className="flex-none text-accent-purple"
                   height="24"

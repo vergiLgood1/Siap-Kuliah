@@ -4,6 +4,8 @@ const nextConfig = {
         domains: [
             'assets.aceternity.com',
             'pbs.twimg.com',
+            'www.freepik.com',
+            'img.freepik.com',
 
         ],
       },

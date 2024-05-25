@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
 
-import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image} from "@nextui-org/react";
+import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Avatar} from "@nextui-org/react";
 
 export const InfiniteMovingCards = ({
   items,
@@ -13,7 +13,7 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    src: string;
+    avatar: string;
     quote: string;
     name: string;
     title: string;
@@ -89,26 +89,28 @@ export const InfiniteMovingCards = ({
         )}
       >
         {items.map((item, idx) => (
-           <Card className="max-w-[400px] bg-[#f6f5f4]">
-           <CardHeader className="flex gap-3">
-             <Image
-               alt="nextui logo"
-               height={40}
-               radius="sm"
-               src={item.src}
-               width={40}
-             />
-             <div className="flex flex-col">
-               <p className="text-md">{item.name}</p>
-               <p className="text-small text-default-500">{item.title}</p>
+           <Card 
+           className="w-[245px] md:w-[422px] p-6 bg-gradient-to-t from-[#FFFFFF00] to-[#FFFFFF0D] border-[1px] border-[#2D2D2D]"
+           key={item.name}
+           >
+           <CardHeader className="flex gap-3 px-0 pt-0 pb-6">
+            <Avatar 
+            isBordered 
+            radius="full" 
+            size="md" 
+            src={item.avatar} 
+            className=""
+            />
+             <div className="flex flex-col md:gap-[6px]">
+               <p className="text-xs">{item.name}</p>
+               <p className="text-[10px] text-default-500">{item.title}</p>
              </div>
            </CardHeader>
            <Divider/>
-           <CardBody>
-             <p>{item.quote}</p>
+           <CardBody className="px-0 pt-6 pb-0">
+             <p className="text-sm">{item.quote}</p>
            </CardBody>
-           <Divider/>
-           <CardFooter>
+           {/* <CardFooter>
              <Link
                isExternal
                showAnchorIcon
@@ -116,7 +118,7 @@ export const InfiniteMovingCards = ({
              >
                Visit source code on GitHub.
              </Link>
-           </CardFooter>
+           </CardFooter> */}
          </Card>
         ))}
       </ul>

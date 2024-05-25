@@ -12,10 +12,11 @@ import { Button } from "@/components/ui/button";
 export function Counselor() {
   return (
     <>
+    <div className=" mx-auto md:auto-rows-[20rem] py-10 md:py-20 rounded-md flex flex-col antialiased bg-white dark:bg-[#1F1F1F] dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden w-full gap-y-4">
      <h2 className="mt-10 sm:mt-10 font-bold text-xl text-center sm:text-3xl dark:text-white text-black">
         Tertarik? <br/> Beli sekarang untuk mengakses seluruh materi
       </h2>
-    <BentoGrid className="max-w-5xl mx-auto md:auto-rows-[20rem] py-10 md:py-20 w-full relative">
+    <BentoGrid className="max-w-5xl mx-auto md:auto-rows-[20rem] py-10 md:py-5 w-full relative">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -28,10 +29,15 @@ export function Counselor() {
       ))}
     </BentoGrid>
       <div className="flex items-center justify-center ">
-      <Button>
+      <Button
+      className="px-12 rounded-full bg-neutral-700 hover:bg-neutral-700" 
+      
+      
+      >
         View All
       </Button>
       </div>
+    </div>
     
     </>
   );
@@ -43,21 +49,21 @@ const items = [
   {
     title: "Gojo",
     description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
+    header: "/assets/images/img1.jpg",
     className: "md:col-span-1",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Sumanto",
     description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
+   header: "/assets/images/img1.jpg",
     className: "md:col-span-1",
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Speed",
     description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
+   header: "/assets/images/img1.jpg",
     className: "md:col-span-1",
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
@@ -65,7 +71,7 @@ const items = [
     title: "Ronaldo",
     description:
       "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
+   header: "/assets/images/img1.jpg",
     className: "md:col-span-1",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },

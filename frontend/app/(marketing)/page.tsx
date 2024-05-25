@@ -4,6 +4,9 @@ import { Features } from './_components/features'
 import { Counselor } from './_components/counselor'
 import { Testimonial } from './_components/testimonial'
 import { Pricing } from './_components/pricing'
+import Footer from './_components/footer'
+import Faq from './_components/faq'
+import Cta from './_components/cta'
 
 
 const MarketingPage = () => {
@@ -14,6 +17,10 @@ const MarketingPage = () => {
       <Counselor/>
       <Testimonial/>
       <Pricing/>
+      <Faq/>
+      <Cta/>
+      <Footer/>
+
     </div>
   )
 }
